@@ -164,7 +164,7 @@ const ImageCarousel = () => {
   };
 
   return (
-    <section className="bg-gray-50 py-12">
+    <section className="bg-gray-200 py-12">
       <div className="text-center mb-10">
         <h2 className="text-3xl font-bold">Our Portfolio</h2>
         <p className="text-gray-600 mt-2">Explore our amazing projects</p>
@@ -386,7 +386,7 @@ const TallyPrimeLanding = () => {
           </div>
         </div>
       </section>
-      <div className="bg-gray-100 py-16">
+      <div className="bg-gray-200 py-16">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-2xl md:text-4xl font-bold mb-4">Customers say nice things</h2>
           <p className="text-gray-500 mb-12">
@@ -438,7 +438,7 @@ const TallyPrimeLanding = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row items-center justify-between p-8 bg-white shadow-lg rounded-lg">
+      <div className="flex flex-col lg:flex-row items-center justify-between p-8 bg-gray-50">
         {/* Left Section */}
         <div className="mb-8 lg:ml-36">
           <h2 className="text-2xl font-bold text-black mb-4">
@@ -496,7 +496,7 @@ const TallyPrimeLanding = () => {
               type="submit"
               className="w-full bg-purple-700 text-white font-semibold py-3 rounded-lg hover:bg-purple-800 transition duration-200"
             >
-              Get Free Trial
+              Call Me Now
             </button>
           </form>
           <p className="text-sm text-gray-500 mt-4">
@@ -504,34 +504,30 @@ const TallyPrimeLanding = () => {
           </p>
         </div>
       </div>
-
-      {/* Footer Section */}
-      <div className="bg-gray-50 py-8 mt-8">
-        <div className="text-center">
-          <p className="text-sm font-semibold text-gray-500 mb-1">
-            WHAT ARE YOU WAITING FOR?
-          </p>
-          <h2 className="text-xl font-bold text-black mb-4">
-            Request a callback from the expert.
-          </h2>
-          <button className="bg-purple-700 text-white font-semibold py-2 px-6 rounded-lg hover:bg-purple-800 transition duration-200">
-            Get Your Estimate for Free!!!
-          </button>
-        </div>
-        <div className="flex justify-between items-center text-gray-500 text-sm mt-6 px-8">
-          <p>Software House</p>
-          <p>© All Rights Reserved</p>
-          <div className="space-x-4">
-            <a href="#" className="hover:text-blue-500 hover:underline">
-              Facebook
-            </a>
-            <span>|</span>
-            <a href="#" className="hover:text-blue-500 hover:underline">
-              LinkedIn
-            </a>
-          </div>
-        </div>
+      <div className="bg-gray-200 py-12 flex flex-col items-center text-center">
+        <p className="text-sm uppercase text-gray-500 mb-2">
+          What are you waiting for?
+        </p>
+        <h2 className="text-2xl font-bold text-black mb-6">
+          Request a callback from the expert.
+        </h2>
+        <button className="bg-purple-700 text-white px-6 py-3 rounded-lg font-semibold text-sm hover:bg-purple-800 transition">
+          Sign Up for 7 Days Free Trial
+        </button>
       </div>
+      <footer className="bg-gray-600 py-4 text-sm text-white flex justify-between items-center px-8">
+        <div>Software House Tech</div>
+        <div>© All Rights Reserved</div>
+        <div className="flex space-x-4">
+          <a href="#" className="hover:text-blue-400 hover:underline">
+            Facebook
+          </a>
+          <span>|</span>
+          <a href="#" className="hover:text-blue-400 hover:underline">
+            LinkedIn
+          </a>
+        </div>
+      </footer>
     </div>
   );
 };
