@@ -6,123 +6,135 @@ import image2 from "../assets/images/image2.webp";
 import image3 from "../assets/images/image3.png";
 import image4 from "../assets/images/image4.avif";
 import web1 from "../assets/images/web1.png";
-import { s } from "framer-motion/client";
+import customer1 from "../assets/images/customer1.png";
+import customer2 from "../assets/images/customer2.jpg";
+import certified from "../assets/images/certified.png";
+import endtoend from "../assets/images/endtoend.png";
+import cuttingedge from "../assets/images/cuttingedge.png";
+import postdevelopment from "../assets/images/postdevelopment.png";
+import seo from "../assets/images/seo.png";
+import free from "../assets/images/free.png";
+
+
 const features = [
   {
     title: "Custom Website Development",
     description:
-      "Now offers a user-friendly and efficient Excel Import Function that allows users to import ledgers and transactions seamlessly.",
-    icon: "📄",
+      "Design and develop fully customized websites tailored to meet business needs with responsive and modern designs.",
+    icon: "🌐", // Globe icon for websites
   },
   {
     title: "E-Commerce Website Development",
     description:
-      "This add-on displays the complete business picture on one screen.",
-    icon: "👤",
+      "Build robust online stores with seamless payment integration, inventory management, and user-friendly interfaces.",
+    icon: "🛒", // Shopping cart icon for e-commerce
   },
   {
     title: "CMS Development (WordPress, Shopify, etc.)",
     description:
-      "Manage multiple GSTINs effortlessly, ensuring flexibility in compliance and reporting.",
-    icon: "🔀",
+      "Develop dynamic and scalable websites using platforms like WordPress, Shopify, and Joomla for easy content management.",
+    icon: "📋", // Clipboard icon for CMS
   },
   {
     title: "Maintenance & Support for Existing Websites",
     description:
-      "Easily refine and analyze data with improved report filters for enhanced insights.",
-    icon: "📝",
+      "Provide regular updates, bug fixes, and performance optimization to ensure your website runs smoothly.",
+    icon: "🔧", // Wrench icon for maintenance
   },
   {
     title: "Custom Software Development",
     description:
-      "Easily refine and analyze data with improved report filters for enhanced insights.",
-    icon: "📝",
+      "Develop tailored software solutions to meet specific business requirements and streamline operations.",
+    icon: "💻", // Laptop icon for software development
   },
   {
     title: "Mobile App Development (iOS & Android)",
     description:
-      "Easily refine and analyze data with improved report filters for enhanced insights.",
-    icon: "📝",
+      "Create user-friendly mobile apps for Android and iOS platforms with advanced features and high performance.",
+    icon: "📱", // Mobile phone icon for app development
   },
   {
     title: "Cloud-Based Solutions for Softwares",
     description:
-      "Easily refine and analyze data with improved report filters for enhanced insights.",
-    icon: "📝",
+      "Leverage cloud technology to provide scalable, secure, and accessible solutions for businesses.",
+    icon: "☁️", // Cloud icon for cloud-based solutions
   },
   {
     title: "API Integration for Softwares",
     description:
-      "Easily refine and analyze data with improved report filters for enhanced insights.",
-    icon: "📝",
+      "Seamlessly integrate APIs to enhance software functionality and connect with third-party services.",
+    icon: "🔗", // Link icon for API integration
   },
   {
-    title: "API Integration for Softwares",
+    title: "UI/UX Design & Development",
     description:
-      "Easily refine and analyze data with improved report filters for enhanced insights.",
-    icon: "📝",
+      "Design intuitive and visually appealing user interfaces to improve user experience and engagement.",
+    icon: "🎨", // Palette icon for design
   },
   {
-    title: "API Integration for Softwares",
+    title: "Branding and Graphic Design",
     description:
-      "Easily refine and analyze data with improved report filters for enhanced insights.",
-    icon: "📝",
+      "Craft unique branding strategies, logos, and designs to establish a strong visual identity for businesses.",
+    icon: "🖌️", // Paintbrush icon for branding
   },
   {
-    title: "API Integration for Softwares",
+    title: "Consulting Services for Startups",
     description:
-      "Easily refine and analyze data with improved report filters for enhanced insights.",
-    icon: "📝",
+      "Offer expert guidance on technology, product development, and digital strategies to help startups grow.",
+    icon: "💡", // Light bulb icon for consulting
   },
   {
-    title: "API Integration for Softwares",
+    title: "On Page & Off Page SEO Services",
     description:
-      "Easily refine and analyze data with improved report filters for enhanced insights.",
-    icon: "📝",
+      "Improve website rankings through on-page optimizations and off-page strategies like link building.",
+    icon: "📈", // Chart icon for SEO services
   },
   {
-    title: "API Integration for Softwares",
+    title: "Technical & Local SEO Services",
     description:
-      "Easily refine and analyze data with improved report filters for enhanced insights.",
-    icon: "📝",
+      "Optimize website performance, mobile-friendliness, and local business visibility to attract more customers.",
+    icon: "📍", // Pin icon for local SEO
   },
   {
-    title: "API Integration for Softwares",
+    title: "SEO Audit and Reports",
     description:
-      "Easily refine and analyze data with improved report filters for enhanced insights.",
-    icon: "📝",
+      "Analyze website performance and provide actionable insights to improve search engine rankings.",
+    icon: "📝", // Notepad icon for reports
   },
   {
-    title: "API Integration for Softwares",
+    title: "Social Media Marketing Services",
     description:
-      "Easily refine and analyze data with improved report filters for enhanced insights.",
-    icon: "📝",
+      "Manage and grow your online presence with strategic social media campaigns and paid advertisements.",
+    icon: "📣", // Megaphone icon for social media
   },
   {
-    title: "API Integration for Softwares",
+    title: "Content Marketing and Email Marketing",
     description:
-      "Easily refine and analyze data with improved report filters for enhanced insights.",
-    icon: "📝",
+      "Create engaging content and email campaigns to connect with your audience and drive conversions.",
+    icon: "✉️", // Envelope icon for email marketing
   },
 ];
 const featuresLeft = [
   {
     title: "Certified Software Developers",
+    className: "bg-white w-48 h-48", // Increased size
     description:
-      "Generate E-Invoices seamlessly within the TallyPrime dashboard.",
-    image: "/path-to-icon-connected.png",
+      "Our team of certified developers ensures high-quality solutions for all your business needs.",
+    image: certified,
   },
   {
     title: "End-to-End Development Expertise",
     description:
-      "Configure to generate e-invoicing by single mode.",
-    image: "/path-to-icon-single.png",
+      "We handle every step of the development process, from ideation to delivery and maintenance.",
+    image: endtoend,
+    className: "w-48 h-48", // Increased size
   },
   {
     title: "Cutting Edge Technology Stack",
     description:
-      "Generate and send invoices in bulk & automatically fetch & print QR codes.",
-    image: "/path-to-icon-bulk.png",
+      "Leverage the latest technologies to build scalable, secure, and innovative digital solutions.",
+    image: cuttingedge,
+    className: "w-48 h-48", // Increased size
   },
 ];
 
@@ -130,20 +142,23 @@ const featuresRight = [
   {
     title: "Post-Development Support and Maintenance",
     description:
-      "TallyPrime automatically integrates your invoice with GSTIN & e-way bill system.",
-    image: "/path-to-icon-eway.png",
+      "Ensure your project runs smoothly with our dedicated support and maintenance services.",
+    image: postdevelopment,
+    className: "w-48 h-48", // Increased size
   },
   {
-    title: "1 Year Free Hosting & Domain",
+    title: "1 Year Free Hosting",
     description:
-      "Cancel invoices for which IRN is already generated with ease.",
-    image: "/path-to-icon-cancel.png",
+      "Get 1 year of free hosting to kickstart your online presence.",
+    image: free,
+    className: "w-48 h-48", // Increased size
   },
   {
-    title: "SEO Friendly Development",
+    title: "SEO-Friendly Development",
     description:
-      "Generate exclusive e-invoice reports with a complete view of the transaction status.",
-    image: "/path-to-icon-reports.png",
+      "We build websites optimized for search engines to boost visibility and drive traffic.",
+    image: seo,
+    className: "w-48 h-48", // Increased size
   },
 ];
 
@@ -239,15 +254,15 @@ const TallyPrimeLanding = () => {
         <div className="max-w-6xl w-full flex flex-wrap md:flex-nowrap shadow-lg rounded-lg overflow-hidden">
           <div className="bg-gray-500 flex-1 p-8 flex flex-col justify-center text-white mr-10 rounded-r-lg">
             <h1 className="text-4xl font-bold leading-snug">
-              Streamline Your Business with <br />
-              TallyPrime:
-              <span className="block">The Ultimate Accounting, Billing, and GST Software</span>
+              Transform Your Business with <br />
+              Software House Tech:
+              <span className="block">with Our Expert Digital Solutions.</span>
             </h1>
-            <p className="mt-4 text-lg">
-              Discover the Power of Effortless Financial Management and Seamless GST Compliance.
+            <p className="mt-4 text-xl">
+              Software, Websites, SEO, Apps, and Marketing <br /> — All in One Place.
             </p>
             <button className="mt-6 px-6 py-3 bg-purple-600 text-white font-bold rounded-full hover:bg-purple-700">
-              Start Your 7 Days Free Trial
+              &lt;-- Start Your Journey With Us --&gt;
             </button>
           </div>
           <div className="bg-white flex-1 p-8 mx-10 my-5 rounded-xl">
@@ -260,7 +275,7 @@ const TallyPrimeLanding = () => {
                 />
               </div>
               <h2 className="text-lg font-semibold">
-                India's No.1 Accounting Software With 7 Days Free Trial!
+                One of India's Best Website Developemt Company!
               </h2>
             </div>
             <form className="mt-6 space-y-4">
@@ -293,7 +308,7 @@ const TallyPrimeLanding = () => {
                 type="submit"
                 className="w-full p-3 bg-purple-600 text-white font-bold rounded-lg hover:bg-purple-700"
               >
-                Get Free Trial
+                Contact Now
               </button>
             </form>
           </div>
@@ -328,10 +343,10 @@ const TallyPrimeLanding = () => {
       <section className="bg-gray-50 py-16">
         {/* Title Section */}
         <div className="text-center mb-10">
-          <h2 className="text-3xl font-bold">E-Invoicing Features</h2>
+          <h2 className="text-3xl font-bold">Why Us!</h2>
           <p className="text-gray-600 mt-2">
-            Our features are designed to meet the requirements of both beginners
-            and players. Get the right feature that suits you.
+            Our Developments are designed to meet the requirements of both beginners
+            and players. <br />Get the right Software Development that suits you.
           </p>
         </div>
 
@@ -390,7 +405,7 @@ const TallyPrimeLanding = () => {
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-2xl md:text-4xl font-bold mb-4">Customers say nice things</h2>
           <p className="text-gray-500 mb-12">
-            TRUSTED BY OVER 2 Million+ TALLY CUSTOMERS WORLDWIDE
+            TRUSTED BY OVER 1000+ CUSTOMERS WORLDWIDE
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -398,46 +413,39 @@ const TallyPrimeLanding = () => {
             {/* Testimonial 1 */}
             <div className="bg-white rounded-lg shadow-md p-6 max-w-md mx-auto">
               <p className="text-gray-700 text-base mb-4">
-                "TallyPrime has truly transformed the way I manage my business finances.
-                It's like having an accounting superhero by my side! With its user-friendly
-                interface and powerful features, TallyPrime has simplified my entire
-                accounting process. From effortless billing to seamless GST compliance, it
-                handles it all with ease."
+                “We hired Software House Tech for custom software development, and the results were exceptional. The solution streamlined our operations, reduced errors, and improved efficiency. Their team was professional, responsive, and delivered beyond our expectations. Highly recommended!”
               </p>
-              <div className="flex items-center space-x-3">
+              <div className="flex items-center justify-between">
                 <img
-                  src="path/to/customer1.jpg" // Replace with the actual avatar image path
+                  src={customer1}
                   alt="Anand Kishore"
-                  className="w-10 h-10 rounded-full"
+                  className="w-12 h-12 rounded-full"
                 />
-                <div>
-                  <h3 className="font-semibold text-sm">Anand Kishore</h3>
-                </div>
+                <h3 className="font-semibold text-sm text-right">Anand Kishore</h3>
               </div>
             </div>
 
             {/* Testimonial 2 */}
             <div className="bg-white rounded-lg shadow-md p-6 max-w-md mx-auto">
               <p className="text-gray-700 text-base mb-4">
-                "TallyPrime has struck the perfect balance between simplicity and power.
-                Its intuitive interface makes it a breeze to navigate, even for someone like me
-                with limited accounting knowledge. I can easily manage my billing, track
-                expenses, and generate professional invoices without any hassle."
+                “Working with Software house Tech was fantastic! They created a stunning, user-friendly e-commerce website that boosted our traffic and sales. Their expertise, attention to detail, and seamless communication made the process smooth. Highly recommend them!”
               </p>
-              <div className="flex items-center space-x-3">
+              <div className="flex items-center justify-between">
                 <img
-                  src="path/to/customer2.jpg" // Replace with the actual avatar image path
-                  alt="Ravi Kumar"
-                  className="w-10 h-10 rounded-full"
+                  src={customer2}
+                  alt="Vivek Kumar"
+                  className="w-12 h-12 rounded-full"
                 />
                 <div>
-                  <h3 className="font-semibold text-sm">Ravi Kumar</h3>
+                  <h3 className="font-semibold text-sm text-right">Vivek Kumar</h3>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      
       <div className="flex flex-col lg:flex-row items-center justify-between p-8 bg-gray-50">
         {/* Left Section */}
         <div className="mb-8 lg:ml-36">
@@ -463,8 +471,8 @@ const TallyPrimeLanding = () => {
 
         {/* Right Section */}
         <div className="w-full lg:w-1/3 lg:mr-8 bg-gray-100 p-6 rounded-lg shadow">
-          <h3 className="text-xl font-semibold text-purple-900 mb-4">
-            India's No.1 Accounting Software With 7 Days Free Trial!
+          <h3 className="text-2xl font-semibold text-purple-900 mb-4">
+            One of India's Best Website Developemt Company!
           </h3>
           <form className="space-y-4">
             <input
@@ -509,10 +517,10 @@ const TallyPrimeLanding = () => {
           What are you waiting for?
         </p>
         <h2 className="text-2xl font-bold text-black mb-6">
-          Request a callback from the expert.
+          Get Your free Quotation Now
         </h2>
         <button className="bg-purple-700 text-white px-6 py-3 rounded-lg font-semibold text-sm hover:bg-purple-800 transition">
-          Sign Up for 7 Days Free Trial
+          Click Here
         </button>
       </div>
       <footer className="bg-gray-600 py-4 text-sm text-white flex justify-between items-center px-8">
