@@ -14,6 +14,7 @@ import free from "../assets/images/free.png";
 import seo1 from "../assets/images/seo1.png";
 import appdevelopment from "../assets/images/appdevelopment.jpg";
 import softwaredevelopment1 from "../assets/images/softwaredevelopment1.jpg";
+import { Analytics } from "@vercel/analytics/react"
 
 
 const features = [
@@ -338,6 +339,7 @@ const TallyPrimeLanding = () => {
 
 
       <ImageCarousel />
+      <Analytics/>
 
 
       <section className="bg-gray-50 py-16">
