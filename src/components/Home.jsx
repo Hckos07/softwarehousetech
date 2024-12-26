@@ -2,9 +2,6 @@ import React, { useState } from "react";
 import logo from "../assets/images/logos.png";
 import { motion, AnimatePresence } from "framer-motion";
 import image1 from "../assets/images/image1.png";
-import image2 from "../assets/images/image2.webp";
-import image3 from "../assets/images/image3.png";
-import image4 from "../assets/images/image4.avif";
 import web1 from "../assets/images/web1.png";
 import customer1 from "../assets/images/customer1.png";
 import customer2 from "../assets/images/customer2.jpg";
@@ -14,6 +11,9 @@ import cuttingedge from "../assets/images/cuttingedge.png";
 import postdevelopment from "../assets/images/postdevelopment.png";
 import seo from "../assets/images/seo.png";
 import free from "../assets/images/free.png";
+import seo1 from "../assets/images/seo1.png";
+import appdevelopment from "../assets/images/appdevelopment.jpg";
+import softwaredevelopment1 from "../assets/images/softwaredevelopment1.jpg";
 
 
 const features = [
@@ -117,7 +117,7 @@ const features = [
 const featuresLeft = [
   {
     title: "Certified Software Developers",
-    className: "bg-white w-48 h-48", // Increased size
+    className: "bg-white w-48 h-48", 
     description:
       "Our team of certified developers ensures high-quality solutions for all your business needs.",
     image: certified,
@@ -127,14 +127,14 @@ const featuresLeft = [
     description:
       "We handle every step of the development process, from ideation to delivery and maintenance.",
     image: endtoend,
-    className: "w-48 h-48", // Increased size
+    className: "w-48 h-48", 
   },
   {
     title: "Cutting Edge Technology Stack",
     description:
       "Leverage the latest technologies to build scalable, secure, and innovative digital solutions.",
     image: cuttingedge,
-    className: "w-48 h-48", // Increased size
+    className: "w-48 h-48", 
   },
 ];
 
@@ -144,26 +144,26 @@ const featuresRight = [
     description:
       "Ensure your project runs smoothly with our dedicated support and maintenance services.",
     image: postdevelopment,
-    className: "w-48 h-48", // Increased size
+    className: "w-48 h-48", 
   },
   {
     title: "1 Year Free Hosting",
     description:
       "Get 1 year of free hosting to kickstart your online presence.",
     image: free,
-    className: "w-48 h-48", // Increased size
+    className: "w-48 h-48", 
   },
   {
     title: "SEO-Friendly Development",
     description:
       "We build websites optimized for search engines to boost visibility and drive traffic.",
     image: seo,
-    className: "w-48 h-48", // Increased size
+    className: "w-48 h-48", 
   },
 ];
 
 
-const images = [image1, image2, image3, image4];
+const images = [image1, seo1, appdevelopment, softwaredevelopment1];
 
 const ImageCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
